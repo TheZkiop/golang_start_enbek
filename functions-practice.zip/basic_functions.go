@@ -1,19 +1,20 @@
 package main
 
+/**
+ *	E-Mail: thezkiop@proton.me
+ **/
+
 // Sum возвращает сумму двух целых чисел
 func Sum(a, b int) int {
-    // Ваш код здесь
-    return 0
+    return a + b
 }
 
 // Average возвращает среднее арифметическое трех чисел
 func Average(a, b, c float64) float64 {
-    // Ваш код здесь
-    return 0
+    return (a + b + c) / 3
 }
 
 // Greeting возвращает приветствие в формате "Привет, [имя]!"
 func Greeting(name string) string {
-    // Ваш код здесь
-    return ""
+    return ("Привет, " + name + "!")
 }

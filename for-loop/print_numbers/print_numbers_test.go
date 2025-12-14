@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"bytes"
 	"io"
 	"os"
@@ -32,6 +33,7 @@ func TestPrintNumbers(t *testing.T) {
 		t.Errorf("Ожидалось 10 строк вывода, получено %d", len(lines))
 	}
 
+	// print_numbers_test.go:38: Строка 10: ожидалось '10', получено '10'
 	for i, line := range lines {
 		expectedLine := i + 1
 		if line != string(rune('0'+expectedLine)) {

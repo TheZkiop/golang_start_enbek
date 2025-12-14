@@ -1,10 +1,23 @@
 package main
 
+/**
+ *	E-Mail: thezkiop@proton.me
+ **/
+
 // FindMax находит максимальное число из переданных аргументов
 // Если аргументы не переданы, возвращает 0
 func FindMax(numbers ...int) int {
-    // Ваш код здесь
-	return 0
+    	if len(numbers) == 0 {
+		return 0
+	}
+	maxVal := numbers[0]
+	
+	for i := 0; i < len(numbers); i++ {
+		if numbers[i] > maxVal {
+			maxVal = numbers[i]
+		}
+	}
+	return maxVal
 }
 
 // Concatenate соединяет строки через указанный разделитель
@@ -12,6 +25,13 @@ func FindMax(numbers ...int) int {
 // parts - строки для соединения
 // Пример: Concatenate(", ", "один", "два", "три") -> "один, два, три"
 func Concatenate(separator string, parts ...string) string {
-    // Ваш код здесь
-	return ""
+	str := ""
+	for i := 0; i < len(parts); i++ {
+		separatorOrNot := ""
+		if i < len(parts) - 1 {
+			separatorOrNot = separator
+		}
+		str += parts[i] + separatorOrNot
+	}
+	return str
 }

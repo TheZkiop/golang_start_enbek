@@ -1,5 +1,9 @@
 package main
 
+/**
+ *	E-Mail: thezkiop@proton.me
+ **/
+
 import (
 	"fmt"
 	"math/rand"
@@ -22,8 +26,6 @@ func main() {
 }
 
 // FindMax возвращает максимальное значение из трёх чисел
-// TODO: Реализуйте эту функцию согласно заданию
 func FindMax(a, b, c int) int {
-	// Удалите эту строку и напишите своё решение
-	return 0 
+	return max(a, b, c)
 }

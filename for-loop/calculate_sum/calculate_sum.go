@@ -1,5 +1,9 @@
 package main
 
+/**
+ *	E-Mail: thezkiop@proton.me
+ **/
+
 import (
 	"fmt"
 )
@@ -11,9 +15,13 @@ func main() {
 }
 
 // CalculateSum вычисляет сумму чисел от 1 до 100
-// TODO: Реализуйте эту функцию согласно заданию
 func CalculateSum() int {
-	// Удалите эту строку и напишите своё решение
-	// Используйте цикл for с одним условием (в стиле while)
-	return 0
+	iter := 1
+	val := 1
+	stop := 100
+	for iter < stop {
+		iter = iter + 1
+		val = val + iter
+	}
+	return val
 }

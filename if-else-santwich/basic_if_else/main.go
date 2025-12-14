@@ -1,5 +1,9 @@
 package main
 
+/**
+ *	E-Mail: thezkiop@proton.me
+ **/
+
 import (
 	"fmt"
 	"math/rand"
@@ -12,9 +16,14 @@ func main() {
 	fmt.Println("Температура:", temperature, "°C -", GetTemperatureMessage(temperature))
 }
 
-
-// TODO: Реализуйте эту функцию согласно заданию
 func GetTemperatureMessage(temp int) string {
-	// Удалите эту строку и напишите своё решение
-	return "Напишите свою реализацию здесь"
+	msg := "Очень холодно"
+	if temp > 30 {
+		msg = "Жарко"
+	} else if temp >= 16 {
+		msg = "Тепло"
+	} else if temp >= 0 {
+		msg = "Прохладно"
+	}
+	return msg
 }
